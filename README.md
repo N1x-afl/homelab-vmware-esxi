@@ -14,6 +14,7 @@ Documentación completa de mi laboratorio de virtualización doméstico con VMwa
 - [Especificaciones del Hardware](#-especificaciones-del-hardware)
 - [Configuración de ESXi](#️-configuración-de-esxi)
 - [Máquinas Virtuales](#️-máquinas-virtuales)
+- [Monitoreo y Dashboards](#-monitoreo-y-dashboards)
 - [Uso de Recursos](#-uso-de-recursos)
 - [Documentación](#-documentación)
 - [Roadmap](#️-roadmap)
@@ -28,7 +29,8 @@ Este HomeLab está diseñado para prácticas de virtualización, administración
 - ✅ Virtualización con VMware ESXi
 - ✅ Gestión de contenedores con Docker
 - ✅ Servicios de red (SMB/CIFS)
-- ✅ Monitoreo de infraestructura
+- ✅ Monitoreo completo de infraestructura (Zabbix + Grafana)
+- ✅ Supervisión de dispositivos de red (Fortigate + Mikrotik)
 - ✅ Prácticas de hardening y seguridad
 
 ---
@@ -87,9 +89,13 @@ Este HomeLab está diseñado para prácticas de virtualización, administración
 | **Hostname** | ubuntu |
 
 **Servicios/Contenedores Deployados**:
-- Servicios de monitoreo (Zabbix/Grafana - en desarrollo)
+- ✅ Zabbix Server - Monitoreo de infraestructura
+- ✅ Grafana - Visualización de métricas
 - Aplicaciones containerizadas
 - Entorno de desarrollo y testing
+
+![Docker Containers](images/docker-containers.png)
+*Vista de contenedores Docker en ejecución*
 
 ---
 
@@ -110,6 +116,56 @@ Este HomeLab está diseñado para prácticas de virtualización, administración
 **Servicios**:
 - Servidor SMB/CIFS para compartir archivos en red local
 - Configuración optimizada para bajo consumo de recursos
+
+---
+
+## 📊 Monitoreo y Dashboards
+
+El laboratorio cuenta con un sistema completo de monitoreo implementado con **Zabbix 7.0** y **Grafana**, permitiendo supervisión en tiempo real de toda la infraestructura.
+
+### Infraestructura Monitoreada
+
+![ESXi VMs Status](images/esxi-vms.png)
+*Estado de las máquinas virtuales en ESXi*
+
+#### Hosts Monitoreados por Zabbix
+
+![Zabbix Hosts Dashboard](images/zabbix-dashboard-hosts.png)
+*Panel principal de hosts monitoreados en Zabbix*
+
+**Dispositivos en monitoreo activo:**
+- 🖥️ **Servidor ESXi** - Hipervisor principal
+- 🐧 **Ubuntu Docker Server** - VM con contenedores
+- 🔥 **Fortigate** - Firewall perimetral
+- 📡 **Mikrotik** - Router/Switch principal
+
+![Zabbix Main Dashboard](images/zabbix-dashboard.png)
+*Dashboard principal de Zabbix con métricas generales*
+
+### Dashboards de Grafana
+
+#### Dashboard Linux Server
+![Linux Server Metrics](images/Dashboard_Linux_Server.png)
+*Métricas detalladas del servidor Ubuntu (CPU, RAM, Disco, Red)*
+
+#### Dashboard Fortigate
+![Fortigate Dashboard](images/Dashboard_Fortigate90D.png)
+*Monitoreo del firewall Fortigate - Tráfico, sesiones, políticas*
+
+#### Dashboard Mikrotik
+![Mikrotik Dashboard](images/Dashboard_Mikrotik.png)
+*Estadísticas del router Mikrotik - Interfaces, ancho de banda, conexiones*
+
+![Zabbix Secondary Dashboard](images/zabbix-dashboard2.png)
+*Dashboard secundario de Zabbix con alertas y eventos*
+
+### Métricas Monitoreadas
+- 📈 CPU, RAM y Disco en todos los hosts
+- 🌐 Tráfico de red y latencia
+- 🔥 Estados de firewall y políticas activas
+- 📡 Ancho de banda y throughput
+- ⚠️ Sistema de alertas configurado
+- 📊 Histórico de métricas para análisis
 
 ---
 
@@ -154,12 +210,15 @@ DietPi VM:
 - [x] Configuración de red management
 - [x] Deployment de VM Ubuntu con Docker
 - [x] Deployment de VM DietPi para SMB
+- [x] **Implementación completa de Zabbix Server**
+- [x] **Implementación completa de Grafana**
+- [x] **Monitoreo de infraestructura completa (ESXi, VMs, Fortigate, Mikrotik)**
 - [x] Documentación inicial del HomeLab
 
 ### En Progreso 🚧
-- [ ] Implementación de sistema de monitoreo (Zabbix + Grafana)
 - [ ] Documentación detallada de configuraciones
 - [ ] Optimización de uso de recursos
+- [ ] Fine-tuning de alertas en Zabbix
 
 ### Planificado 📅
 - [ ] Implementación de backups automatizados con Veeam
