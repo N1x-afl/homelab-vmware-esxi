@@ -10,13 +10,13 @@ Documentación completa de mi laboratorio de virtualización doméstico con VMwa
 
 ## 📋 Tabla de Contenidos
 
-- [Visión General](#visión-general)
-- [Especificaciones del Hardware](#especificaciones-del-hardware)
-- [Configuración de ESXi](#configuración-de-esxi)
-- [Máquinas Virtuales](#máquinas-virtuales)
-- [Uso de Recursos](#uso-de-recursos)
-- [Documentación](#documentación)
-- [Roadmap](#roadmap)
+- [Visión General](#-visión-general)
+- [Especificaciones del Hardware](#-especificaciones-del-hardware)
+- [Configuración de ESXi](#️-configuración-de-esxi)
+- [Máquinas Virtuales](#️-máquinas-virtuales)
+- [Uso de Recursos](#-uso-de-recursos)
+- [Documentación](#-documentación)
+- [Roadmap](#️-roadmap)
 
 ---
 
