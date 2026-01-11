@@ -196,7 +196,7 @@ DietPi VM:
 
 ## 📚 Documentación
 
-- 📖 [Instalación de ESXi](docs/instalacion-esxi.md) *(Próximamente)*
+- 📖 [Instalación de ESXi](docs/instalacion-esxi.md) ✅
 - 🌐 [Configuración de Red](docs/configuracion-red.md) *(Próximamente)*
 - 🐳 [Setup de Docker Server](docs/docker-server-setup.md) *(Próximamente)*
 - 📁 [Configuración de DietPi SMB](docs/dietpi-smb.md) *(Próximamente)*
