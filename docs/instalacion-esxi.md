@@ -6,15 +6,15 @@ Guía completa de instalación de VMware ESXi 6.5.0 en servidor HP ProLiant ML11
 
 ## 📋 Tabla de Contenidos
 
-- [Requisitos Previos](#requisitos-previos)
-- [Descarga de ESXi](#descarga-de-esxi)
-- [Preparación del Medio de Instalación](#preparación-del-medio-de-instalación)
-- [Configuración de BIOS](#configuración-de-bios)
-- [Proceso de Instalación](#proceso-de-instalación)
-- [Configuración Inicial](#configuración-inicial)
-- [Post-Instalación](#post-instalación)
-- [Verificación](#verificación)
-- [Lecciones Aprendidas](#lecciones-aprendidas)
+- [Requisitos Previos](#-requisitos-previos)
+- [Descarga de ESXi](#-descarga-de-esxi)
+- [Preparación del Medio de Instalación](#-preparación-del-medio-de-instalación)
+- [Configuración de BIOS](#-configuración-de-bios)
+- [Proceso de Instalación](#-proceso-de-instalación)
+- [Configuración Inicial](#-configuración-inicial)
+- [Post-Instalación](#-post-instalación)
+- [Verificación](#.verificación)
+- [Lecciones Aprendidas](#-lecciones-aprendidas)
 
 ---
 
