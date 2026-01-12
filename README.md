@@ -1,4 +1,4 @@
-# 🖥️ HomeLab VMware ESXi®
+# 🖥️ HomeLab VMware ESXi™
 
 Documentación completa de mi laboratorio de virtualización doméstico con VMware ESXi en servidor HP ProLiant ML110 G6.
 
